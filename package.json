@@ -1,0 +1,22 @@
+{
+  "name": "game-2048",
+  "version": "1.0.0",
+  "description": "a sample implementaion of 2048 game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mack1290/sample2048Game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mack1290/sample2048Game/issues"
+  },
+  "homepage": "https://github.com/mack1290/sample2048Game#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

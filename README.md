@@ -1,2 +1,2 @@
 # sample2048Game
-a simple 2048 game 
+a Simple 2048 Game 
