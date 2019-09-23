@@ -12,6 +12,8 @@ app.get('/index.htm', function (req, res) {
     res.sendFile( __dirname + "/" + "index.htm" );
  })
 
+app.get('/favicon.ico', (req, res) => res.status(204));
+
 var server = app.listen(8080, function () {
    var host = server.address().address
    var port = server.address().port
