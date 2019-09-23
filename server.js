@@ -4,7 +4,7 @@ var express = require('express'),
 
 app.use('/public',express.static(path.join(__dirname, 'public')));
 
-app.get('/favicon.ico', (req, res) { 
+app.get('/favicon.ico', function (req, res) { 
      res.status(204);
 })
 
