@@ -4,6 +4,10 @@ var express = require('express'),
 
 app.use('/public',express.static(path.join(__dirname, 'public')));
 
+app.get('/favicon.ico', (req, res) { 
+     res.status(204);
+})
+
 app.get('/', function (req, res) {
     res.sendFile( __dirname + "/" + "index.htm" );
  })
@@ -11,8 +15,6 @@ app.get('/', function (req, res) {
 app.get('/index.htm', function (req, res) {
     res.sendFile( __dirname + "/" + "index.htm" );
  })
-
-app.get('/favicon.ico', (req, res) => res.status(204));
 
 var server = app.listen(8080, function () {
    var host = server.address().address
